@@ -16,9 +16,6 @@ import com.example.navbar.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
-    private TextView status;
-    private Button button , button2 ;
-    public int flg=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,25 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         });
-        status = findViewById(R.id.text);
-        button = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                flg=1;
-//                status.setText("Connected");
-//                status.setTextColor(Color.parseColor("#008037"));
-//            }
-//        });
-//        button2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                flg=0;
-//                status.setText("Disconnected");
-//                status.setTextColor(Color.parseColor("#FF1616"));
-//            }
-//        });
 
     }
 

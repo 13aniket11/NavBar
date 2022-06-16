@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.25" />
         <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
-        <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/layout/fragment_home.xml" value="0.152" />
         <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/layout/fragment_profile.xml" value="0.12664640324214793" />
         <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/layout/fragment_settings.xml" value="0.1334853090172239" />
         <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22685185185185186" />
+        <entry key="..\:/Users/admin/StudioProjects/NavBar/app/src/main/res/xml/root_preferences.xml" value="0.1" />
       </map>
     </option>
   </component>

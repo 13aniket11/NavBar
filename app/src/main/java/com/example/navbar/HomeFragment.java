@@ -3,7 +3,9 @@ package com.example.navbar;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +28,10 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private TextView status;
+    View view;
+    private Button start , stop ;
+    public int flg=0;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -62,6 +68,33 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        Button start = view.findViewById(R.id.start);
+        Button stop = view.findViewById(R.id.stop);
+        TextView status = view.findViewById(R.id.status);
+
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                status.setText("Connected");
+                status.setTextColor(Color.parseColor("#008037"));
+            }
+        });
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                status.setText("Disconnected");
+                status.setTextColor(Color.parseColor("#FF1616"));
+            }
+        });
+
+        
+        return view;
+    }
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        // Setup any handles to view objects here
+        // EditText etFoo = (EditText) view.findViewById(R.id.etFoo);
     }
 }
